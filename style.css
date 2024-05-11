@@ -1,0 +1,271 @@
+/* Color palette */
+/* #003C43 */
+/* #135D66 */
+/* #77B0AA */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Anybody", sans-serif;
+}
+
+/* Styling for page body */
+/* Targeting elements using tags */
+body {
+    background-color: #003C43; 
+    color: #000B16; 
+    display: flex;
+    justify-content: center; 
+    padding: 120px 40px;
+}
+
+/* Styling for text elements */
+h1 {
+    font-size: 38px; 
+    font-weight: 800; 
+    line-height: 36px; 
+    margin: 60px 0 36px 0;
+}
+
+ul { 
+    list-style: none; 
+    line-height: 20px; 
+    letter-spacing: .5px;
+}
+
+li { 
+    margin-bottom: 12px;
+}
+
+li p { 
+    margin-left: 12px; 
+    font-size: 14px;
+}
+
+a { 
+    text-decoration: none; 
+    color: #000B16;
+}
+
+/* Hover style for clickable text */
+a:hover { 
+    color: rgba(0, 11, 22, 0.75);
+}
+
+li div { 
+    display: flex;
+}
+
+hr { 
+    border: 1.5px solid #003C43; 
+    margin: 30px 0;
+}
+
+/* Targeting IDs */
+#main-container { 
+    width: 1040px; 
+    display: grid; 
+    grid-template-columns: 380px 1fr;
+}
+
+/* Left/top side IDs */
+#left-container { 
+    background-color: #77B0AA; 
+    padding: 60px 32px; 
+    border-radius: 4px 0 0 4px;
+}
+
+#profile-container div { 
+    margin: auto; 
+    text-align: center;
+}
+
+#role { 
+    font-weight: 600; 
+    letter-spacing: 2px; 
+    font-size: 20px; 
+    color: #003C43;
+}
+
+
+#skills-list { 
+    list-style: disc; 
+    margin-left: 24px;
+}
+
+/* Right/bottom side IDs */
+#right-container { 
+    background-color: #F0F7FF; 
+    padding: 20px 60px 0px; 
+    border-radius: 0 4px 4px 0;
+}
+
+/* Targeting classes */
+/* Left/top side classes */
+.image-container { 
+    background-color: #F0F7FF; 
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.image-container img { 
+    width: 100%; 
+    border-radius: 50%;
+}
+
+/* Contact's icon */
+.icon {
+    width: 16px; 
+    height: 16px;
+}
+
+/* Styling for different sections e.g 'SKILLS' */
+.section-title { 
+    font-family: "Archivo", sans-serif; 
+    font-size: 20px; 
+    font-weight: 600; 
+    letter-spacing: 4px; 
+    margin-bottom: 23px; 
+    color: #003C43;
+}
+
+.objective, .experience { 
+    line-height: 22px;
+}
+
+/* Styling for Titles of projects in experience section */
+.project-title { 
+    margin-bottom: 12px; 
+    margin-top: 40px; 
+    font-size: 16px; 
+    font-weight: 800;
+}
+
+/* Education text styling */
+.gray { 
+    color: #135D66; 
+    font-size: 14px;
+}
+
+.level { 
+    margin-bottom: 20px;
+}
+
+.school { 
+    font-size: 16px; 
+    font-weight: 600;
+}
+
+/* Responsiveness for 1100px and below */
+@media (max-width: 1100px) { 
+    body {  
+        padding: 60px 40px; 
+    }
+
+    h1 {  
+        font-size: 24px; 
+    }
+
+    #main-container {  
+        grid-template-columns: 340px 1fr; 
+    }
+
+    #right-container {  
+        padding: 100px 60px 40px 60px; 
+    }
+
+    #role {  
+        font-size: 14px; 
+    }
+
+    .image-container {  
+        width: 200px;  
+        height: 200px; 
+    }
+}
+
+/* Responsiveness for 1000px and below */
+@media (max-width: 1000px) { 
+    h1 {  
+        font-size: 28px; 
+    }
+
+    #main-container {  
+        grid-template-columns: 1fr; 
+    }
+
+    #right-container {  
+        padding: 40px 32px;  
+        border-radius: 0 0 4px 4px; 
+    }
+
+    #role {  
+        font-size: 16px; 
+    }
+
+    #left-container {  
+        background-color: #77B0AA;  
+        padding: 40px 32px 32px 32px;  
+        border-bottom: 1px solid #000b1623; 
+        border-radius: 4px 4px 0 0; 
+    }
+
+    .image-container {  
+        width: 250px;  
+        height: 250px; 
+    }
+}
+
+/* Responsiveness for 500px and below */
+@media (max-width: 500px) { 
+    body {  
+        font-size: 14px;  
+        padding: 20px; 
+    }
+
+    ul {  
+        line-height: 14px; 
+    }
+
+    h1 {  
+        font-size: 24px;  
+        margin-top: 20px; 
+        margin-bottom: 16px; 
+    }
+
+    #role {  
+        font-size: 16px; 
+    }
+
+    #right-container {  
+        padding-left: 20px;  
+        padding-right: 20px; 
+    }
+
+    #left-container {  
+        padding-left: 20px;  
+        padding-right: 20px; 
+    }
+
+    .icon {  
+        width: 14px;  
+        height: 14px; 
+    }
+
+    .project-title {  
+        font-size: 14px;  
+        margin-top: 16px; 
+    } 
+
+    .section-title {  
+        font-size: 16px;  
+        margin-bottom: 16px; 
+    }
+
+    .image-container {  
+        width: 180px;  
+        height: 180px; 
+    }
+}
